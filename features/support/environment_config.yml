@@ -1,0 +1,5 @@
+ambiente1:
+  api_base_url: "https://reqres.in/api"
+
+ambiente2:
+  api_base_url: "https://62ab87a9bd0e5d29af121772.mockapi.io/api/v1/pruebaPost"

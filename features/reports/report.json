@@ -1,0 +1,508 @@
+[
+  {
+    "id": "validacion-del-servicio-post",
+    "uri": "features/features/post_users.feature",
+    "keyword": "Feature",
+    "name": "Validacion del servicio POST",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "Yo cargo la informacion para la prueba",
+            "line": 4,
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "job"
+                ]
+              },
+              {
+                "cells": [
+                  "Test User",
+                  "Automation Engineer"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 111000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "Yo consumo el servicio post",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 362793000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validacion-del-servicio-post;validar-el-código-de-respuesta-al-guardar-un-registro",
+        "keyword": "Scenario",
+        "name": "Validar el código de respuesta al guardar un registro",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "Yo deberia recibir un codigo de respuesta 201",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3053000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TMS_QA-1001",
+            "line": 9
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "Yo cargo la informacion para la prueba",
+            "line": 4,
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "job"
+                ]
+              },
+              {
+                "cells": [
+                  "Test User",
+                  "Automation Engineer"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "Yo consumo el servicio post",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 291047000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validacion-del-servicio-post;validar-persistencia-de-datos",
+        "keyword": "Scenario",
+        "name": "Validar persistencia de datos",
+        "description": "",
+        "line": 14,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "And ",
+            "name": "Yo recupero el usuario con el ID devuelto",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 272567000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "Yo valido el response code de la consulta del usuario con el ID guardado sea 200",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1926000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "Yo deberia ver los datos persistidos",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TMS_QA-1002",
+            "line": 13
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "Yo cargo la informacion para la prueba",
+            "line": 4,
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "job"
+                ]
+              },
+              {
+                "cells": [
+                  "Test User",
+                  "Automation Engineer"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "Yo consumo el servicio post",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 282271000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validacion-del-servicio-post;validar-contrato-del-servicio",
+        "keyword": "Scenario",
+        "name": "Validar contrato del servicio",
+        "description": "",
+        "line": 20,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "Yo valido el contrato del response del servicio con respecto al archivo \"post_users_schema.json\"",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30132000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TMS_QA-1003",
+            "line": 19
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "Yo cargo la informacion para la prueba",
+            "line": 4,
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "job"
+                ]
+              },
+              {
+                "cells": [
+                  "Test User",
+                  "Automation Engineer"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "Yo consumo el servicio post",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 442057000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validacion-del-servicio-post;validar-cantidad-de-campos-en-el-response",
+        "keyword": "Scenario",
+        "name": "Validar cantidad de campos en el response",
+        "description": "",
+        "line": 24,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "El response deberia tener 4 campos",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TMS_QA-1004",
+            "line": 23
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "Yo cargo la informacion para la prueba",
+            "line": 4,
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "job"
+                ]
+              },
+              {
+                "cells": [
+                  "Test User",
+                  "Automation Engineer"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "Yo consumo el servicio post",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 312472000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validacion-del-servicio-post;validar-tiempo-de-respuesta-del-servicio",
+        "keyword": "Scenario",
+        "name": "Validar tiempo de respuesta del servicio",
+        "description": "",
+        "line": 28,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "Yo valido el tiempo de respuesta sea menor a 1 segundo",
+            "line": 29,
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 91000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TMS_QA-1005",
+            "line": 27
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "Yo cargo la informacion para la prueba",
+            "line": 4,
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "job"
+                ]
+              },
+              {
+                "cells": [
+                  "Test User",
+                  "Automation Engineer"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "Yo consumo el servicio post",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 277353000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validacion-del-servicio-post;validar-la-presencia-de-campos-en-el-response-body",
+        "keyword": "Scenario",
+        "name": "Validar la presencia de campos en el response body",
+        "description": "",
+        "line": 32,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Then ",
+            "name": "El response deberia contener los campos:",
+            "line": 33,
+            "rows": [
+              {
+                "cells": [
+                  "createdAt"
+                ]
+              },
+              {
+                "cells": [
+                  "name"
+                ]
+              },
+              {
+                "cells": [
+                  "job"
+                ]
+              },
+              {
+                "cells": [
+                  "id"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/post_users_steps.rb:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TMS_QA-1006",
+            "line": 31
+          }
+        ]
+      }
+    ]
+  }
+]
